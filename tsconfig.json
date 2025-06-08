@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist", // directorio donde se compilaran los archivos
+		"rootDir": "./src", // ruta que interpreta el codigo ts y compila
+		"lib": ["ESNext"], // version de compilacion de JS
+		"strict": false, // metodo estricto
+		"sourceMap": true, // crea sourcemaps, util cuando se trabaja con debuggers
+		"esModuleInterop": true, // permite importar librerias en commonJS
+		"declaration": true // crea las definiciones
+	},
+	"include": ["src/**/*.ts"] // que archivos queremos incluir en la compilacion
+}
