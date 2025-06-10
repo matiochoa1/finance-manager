@@ -5,6 +5,7 @@ export interface IUser extends Document {
 	name: string;
 	email: string;
 	password: string;
+	confirmed: boolean;
 }
 
 // Define the schema
@@ -22,6 +23,10 @@ export const UserSchema: Schema = new Schema({
 	password: {
 		type: String,
 		required: true,
+	},
+	confirmed: {
+		type: Boolean,
+		default: false, // by default user won't be confirmed, it must confirm via email
 	},
 });
 
